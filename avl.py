@@ -78,7 +78,7 @@ def rotate_left(root):
 
   right_child.left = root
   root.right = right_left_subtree
-  # print(root.value, right_child.value, right_child.right.value)
+  
   root.height = 1 + max(get_height(root.left), get_height(root.right))
   right_child.height = 1 + max(get_height(right_child.left), get_height(right_child.right))
 

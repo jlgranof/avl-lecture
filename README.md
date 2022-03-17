@@ -103,7 +103,7 @@ def insert(root, value):
   # Case 2: Value is greater than the root's value
   elif root.value < value: root.right = insert(root.right)
 
-  # Case 2: Valie is less than the root's value
+  # Case 2: Value is less than the root's value
   else: root.left = insert(root.left)
 
   return root
@@ -126,17 +126,21 @@ There are going to be 4 different types of rotations we will be making while ins
   4. Right-Left Rotate
 
 <b>Left Rotate</b>
-We will need to use a left rotation if we insert a node into the right subtree of the right subtree.
+We will need to use a left rotation if we insert a node into the right subtree of the right subtree. Here we are adding the node with C into the tree.
 
 ![Left Rotate Image](./images/IMG_0212.JPG)
 
 <b>Right Rotate</b>
-We will need to use a right rotation if we insert a node into the left subtree of the left subtree.
+We will need to use a right rotation if we insert a node into the left subtree of the left subtree. Here we are adding the node wtih A to the tree.
 
 ![Right Rotate Image](./images/IMG_0214.JPG)
 
 <b>Left-Right Rotate</b>
 If we insert a node into the right subtree of of the left subtree, we will first do a left rotation and then do a right rotation.
 
+![Left Right Rotate Image](./images/IMG_0216.JPG)
+
 <b>Right-Left Rotate</b>
 If we insert a node into the left subtree of the right subtree, we will first do a right rotation and then do a left rotation.
+
+![Right Left Rotate Image](./images/IMG_0217.JPG)
