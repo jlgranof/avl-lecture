@@ -69,8 +69,6 @@ def insert(root, value):
   # Case 2: Valie is less than the root's value
   else: root.left = insert(root.left, value)
 
-  return root
-
 
 root = insert(None, 18)
 insert(root, 14)
