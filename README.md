@@ -133,6 +133,8 @@ We will need to use a left rotation if we insert a node into the right subtree o
 <b>Right Rotate</b>
 We will need to use a right rotation if we insert a node into the left subtree of the left subtree.
 
+![Right Rotate Image](./images/IMG_0214.JPG)
+
 <b>Left-Right Rotate</b>
 If we insert a node into the right subtree of of the left subtree, we will first do a left rotation and then do a right rotation.
 
