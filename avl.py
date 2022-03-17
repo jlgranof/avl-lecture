@@ -9,7 +9,7 @@ class Node:
 def inorder_traversal(root):
   if root:
     inorder_traversal(root.left)
-    print(root.value)
+    print (f'{root.value} ', end="")
     inorder_traversal(root.right)
 
 
@@ -93,24 +93,12 @@ def rotate_right(root):
 
   return left_child
 
-print('First Insert')
 root = insert(None, 27)
-inorder_traversal(root)
-print('Second Insert')
 root = insert(root, 30)
-inorder_traversal(root)
-print('Third Insert')
 root = insert(root, 32)
-inorder_traversal(root)
-print('Fourth Insert')
 root = insert(root, 22)
-inorder_traversal(root)
-print('Fifth Insert')
 root = insert(root, 18)
-inorder_traversal(root)
-print('Fifth Insert')
 root = insert(root, 19)
-inorder_traversal(root)
-print('Fifth Insert')
 root = insert(root, 20)
 inorder_traversal(root)
+print('')
