@@ -136,11 +136,11 @@ We will need to use a right rotation if we insert a node into the left subtree o
 ![Right Rotate Image](./images/IMG_0214.JPG)
 
 <b>Left-Right Rotate</b>
-If we insert a node into the right subtree of of the left subtree, we will first do a left rotation and then do a right rotation.
+If we insert a node into the right subtree of of the left subtree, we will first do a left rotation and then do a right rotation. Here we are adding the node with B to the tree.
 
 ![Left Right Rotate Image](./images/IMG_0216.JPG)
 
 <b>Right-Left Rotate</b>
-If we insert a node into the left subtree of the right subtree, we will first do a right rotation and then do a left rotation.
+If we insert a node into the left subtree of the right subtree, we will first do a right rotation and then do a left rotation. Here we are adding the node with B to the tree.
 
 ![Right Left Rotate Image](./images/IMG_0217.JPG)
