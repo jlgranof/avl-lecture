@@ -5,11 +5,14 @@ class Node:
     self.right = None
     self.height = 1
 
+  def __repr__(self):
+    return str(self.value)
+
 
 def inorder_traversal(root):
   if root:
     inorder_traversal(root.left)
-    print (f'{root.value} ', end="")
+    print (f'{root} ', end="")
     inorder_traversal(root.right)
 
 

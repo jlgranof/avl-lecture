@@ -3,7 +3,7 @@
 ## Binary Search Trees
 A binary search tree (BST) is a sorted variation of a binary tree. Child nodes on the left will have a smaller value than their parent and the ones of the right will have a greater value. Here is an example of a BST:
 
-![BST Image](./images/BST.png)
+![BST Image](./images/IMG_0211.jpg)
 
 ### Traversals
 A binary search tree can be traversed with three different Depth-First traversals: inorder, preorder and postorder traversals. 
@@ -109,7 +109,32 @@ def insert(root, value):
   return root
 ```
 
-The time complexity that we are trying to achieve for both search and insert is going to be O(logn), but if we insert these nodes in a bad order, we can end up with literally a linked list. This would bring insert and search times up to O(n). There is a way we can get around this, using self balancing binary search trees. There is more than one way to do this, but we will be going over AVL Trees.
+The time complexity that we are trying to achieve for both search and insert is going to be O(logn), but if we insert these nodes in a bad order, we can end up with literally a linked list. This would bring insert and search times up to O(n). 
 
+```
+39 -> 25 -> 21 -> 18 -> 16 -> 14  -> 5
+```
 
 ## AVL Tree
+There is a way we can get around this, using self balancing binary search trees. There is more than one way to do this, but we will be going over AVL Trees. We need to know the heights for each node in the tree so we can figure out if it is balanced or not. If the difference in height from left and right subtrees is more than one, we will need to preform rotations to balance out the tree.
+
+### Self Balancing Insertion
+There are going to be 4 different types of rotations we will be making while inserting nodes into a tree. They are:
+  1. Left Rotate
+  2. Right Rotate
+  3. Left-Right Rotate
+  4. Right-Left Rotate
+
+<b>Left Rotate</b>
+We will need to use a left rotation if we insert a node into the right subtree of the right subtree.
+
+![Left Rotate Image](./images/IMG_0212.JPG)
+
+<b>Right Rotate</b>
+We will need to use a right rotation if we insert a node into the left subtree of the left subtree.
+
+<b>Left-Right Rotate</b>
+If we insert a node into the right subtree of of the left subtree, we will first do a left rotation and then do a right rotation.
+
+<b>Right-Left Rotate</b>
+If we insert a node into the left subtree of the right subtree, we will first do a right rotation and then do a left rotation.
